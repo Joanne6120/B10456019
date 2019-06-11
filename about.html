@@ -10,7 +10,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<title>Joanne's universe ♥</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
         <link rel="stylesheet" type="text/css" href="css/style1.css" />
-        <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+		<link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"><!--就是這個沒加-->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script><!--add-->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>	<!--add-->
 	</head>
 	<body>
 		
@@ -38,6 +41,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li class="active"><a href="about.html">Volleyball</a></li>
 							<li><a href="services.html">MIZUNO</a></li>
 							<li><a href="pakages.html">Fitness</a></li>
+							<li><a href="contact.html">contact</a></li>
 							<div class="clear"> </div>
 						</ul>
 					</div>
@@ -46,7 +50,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!---start-content----->
 				<div class="wrap">
 					<div class="content">
-						<div class="about-topgrid1">
+						<div class="about-topgrid1" id="about1">
 											<h3>VOLLEYBALL</h3>
 											<img src="images/03.jpg" title="name">
 											<h4>介紹</h4>
@@ -68,51 +72,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												
 												2000年，經若干新規則的修訂，「落地得分制」正式於1月1日起施行，取代以往需要擁有「發球權」的「發球得分制」。
 												</p>
-										<!--<div class="historey-lines">
-											<ul>
-												<li><span>2010 &nbsp;-</span></li>
-												<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p></li>
-												<div class="clear"> </div>
-											</ul>
-										</div>
-										<div class="historey-lines">
-											<ul>
-												<li><span>2010 &nbsp;-</span></li>
-												<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p></li>
-												<div class="clear"> </div>
-											</ul>
-										</div>
-										<div class="historey-lines">
-											<ul>
-												<li><span>2010 &nbsp;-</span></li>
-												<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p></li>
-												<div class="clear"> </div>
-											</ul>
-										</div>
-										<div class="historey-lines">
-											<ul>
-												<li><span>2010 &nbsp;-</span></li>
-												<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p></li>
-												<div class="clear"> </div>
-											</ul>
-										</div>
-										<div class="historey-lines">
-											<ul>
-												<li><span>2010 &nbsp;-</span></li>
-												<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p></li>
-												<div class="clear"> </div>
-											</ul>
-										</div>
-										<div class="clear"> </div>-->
+										
 									</div>
 						<div class="about-services">
 										<h3>our services</h3>
 										<h4>規則</h4>
 										<!--<p>Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Morbi nunc odio, gida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros.</p>-->
 										<ul>
-											<li><a href="#">違例與犯規</a></li>
-											<li><a href="#">暫停和換人</a></li>
-											<li><a href="#">得分</a></li>											
+											<li type="button" class="btn1" data-toggle="collapse" data-target="#demo1" href="#demo1"><a>違例與犯規</a></li>
+											<div id="demo1" class="collapse">
+												<li>連擊：單人連續擊球兩次以上（除第一接傳、或攔網時接觸身體多個部位、或攔網後接一傳）</li>
+												<li>持球：球停留於手中（通常以裁判的個人主觀角度來決定）</li>
+												<li>4次擊球：一方隊伍擊球四次（含）以上（攔網觸球不算在內）</li>
+												<li>過網擊球：對方球員未完成攻擊性擊球前或同時，於對方空間觸球</li>
+												<li>位置錯誤：位置錯誤（只和前後左右有關）發球方由主審裁定，接發球方由二審裁定；或輪轉錯誤（發球員）</li>
+												<li>觸網：根據2012年排球新規則，身體任何一部位碰觸到網上白帶或標誌竿頂部80公分才算觸網或是干擾到另一方之行為才算（但根據2015年最新規則，恢復到只要碰觸網子即算觸網）</li>
+												<li>後排違例：後排不能攔網。</li>
+											</div>
+											<li type="button" class="btn2" data-toggle="collapse" data-target="#demo2" href="#demo2"><a>暫停和換人</a></li>
+											<div id="demo2" class="collapse">
+												<li id="2">每局比賽各隊有兩次普通暫停機會，時間30秒。比賽有一隊先到8分或16分時，各有一次技術暫停的機會（決勝局除外），時間60秒，是否給予暫停也可以由主審來裁定。</li>
+
+												<li>每局比賽各隊均有6次換人的機會。主力隊員只能退出比賽一次，同一局中再次上場比賽時，只能和剛才的人換。替補隊員每局只能上下場各一次，可以替換任何一個主力隊員；同一局中只能由被他替換下場的隊員來替換。</li>
+
+											</div>
+											<li type="button" class="btn3" data-toggle="collapse" data-target="#demo3" href="#demo3"><a>得分</a></li>
+											<div id="demo3" class="collapse">
+												<li>早期的排球比賽採用的是發球得分制。隊伍（己方）先要取得「發球權」成為發球方，然後在對陣中取勝對方，便得一分，並持續擁有「發球權」。相反，如發球方（己方）在對陣中敗陣，雖然對方未能即時得分，但「發球權」便轉移到對方。</li>
+
+												<li>目前世界各地進行的是落地得分制。改成落地得分制後，會讓比賽更刺激，雙方會更積極珍惜每一球。</li>
+
+												<li>排球比賽採取五局三勝制，先取三局勝利就是獲勝。</li>
+
+											</div>											
 											<div class="clear"> </div>
 										</ul>
 									</div> 
@@ -158,6 +150,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li class="corrent"><a href="about.html">Volleyball</a></li>
 								<li><a href="services.html">MIZUNO</a></li>
 								<li><a href="pakages.html">Fitness</a></li>
+								<li><a href="contact.html">contact</a></li>
 							</ul>
 							<p>&copy 2013 Travelexpert . All rights Reserved | Design by <a href="http://w3layouts.com">W3Layouts</a></p>
 						</div>

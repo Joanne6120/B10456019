@@ -12,6 +12,8 @@
 
 	var $event = $.event, resizeTimeout;
 
+	$('.collapse').collapse()
+
 	$event.special.smartresize 	= {
 		setup: function() {
 			$(this).bind( "resize", $event.special.smartresize.handler );

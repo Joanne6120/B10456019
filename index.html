@@ -10,7 +10,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<title>Joanne's universe ♥</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
         <link rel="stylesheet" type="text/css" href="css/style1.css" />
-        <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+		<link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"><!--就是這個沒加-->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script><!--add-->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>	<!--add-->
 	</head>
 	<body>
 		<!----start-wrap--->
@@ -40,7 +43,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="about.html">Volleyball</a></li>
 							<li><a href="services.html">MIZUNO</a></li>
 							<li><a href="pakages.html">Fitness</a></li>
-							<!--<li><a href="contact.html">contact</a></li> -->
+							<li><a href="contact.html">contact</a></li>
 							<div class="clear"> </div>
 						</ul>
 					</div>
@@ -123,17 +126,131 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				     <div class="button"><span><a href="#">Read More</a></span></div>-->
 				</div>
 				<div class="grid_1_of_3 images_1_of_3">
-					  <h3>GROWTH PROCESS</h3>
-					  <ul>
-					  	<li><a href="#">躲避球</a></li>
-					  	<li><a href="#">龍舟比賽</a></li>
-					  	<li><a href="#">田徑隊</a></li>
-					  	<li><a href="#">排球比賽</a></li>
-					  	<li><a href="#">運動會</a></li>
-					  	<li><a href="#">旗手</a></li>
-					  	<li><a href="#">系辦工讀生</a></li>
-					  	<li><a href="#">打工換宿</a></li>
-					  </ul>
+						<h3>GROWTH PROCESS</h3>
+						<div class="panel-group" id="accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" 
+										   href="#collapseOne">
+											躲避球
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse">
+									<div class="panel-body">
+										國小的時候參加躲避校隊，整隊出去比賽超好玩。主要是內外場，配合著戰術把敵對內場消滅就獲勝。
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" 
+										   href="#collapseTwo">
+											龍舟比賽
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse">
+									<div class="panel-body">
+										國中時期，因緣際會下參加了龍舟訓練，訓練完後出去比賽，達到第一名的名次。過程中很辛苦但也很有趣，必賽後因為適應了在水上載浮載沉，所以上岸後會還有在水上的後遺症，很好玩。
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" 
+										   href="#collapseFour">
+											田徑隊
+										</a>
+									</h4>
+								</div>
+								<div id="collapseFour" class="panel-collapse collapse">
+									<div class="panel-body">
+										國小跟高中都有參加，主要負責的比賽是田賽的跳高及跳遠。
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" 
+										   href="#collapseFive">
+											排球比賽
+										</a>
+									</h4>
+								</div>
+								<div id="collapseFive" class="panel-collapse collapse">
+									<div class="panel-body">
+										高中班際比賽，第一次接觸到排球比賽超好玩的，然後我又有運動細胞，所以比起來得心應手。
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" 
+										   href="#collapseSix">
+											運動會
+										</a>
+									</h4>
+								</div>
+								<div id="collapseSix" class="panel-collapse collapse">
+									<div class="panel-body">
+										我最喜歡運動會了，參加過很多比賽，有跑步類的也有田賽類的，辛苦後得到了名次的那種成就感很開心。
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" 
+										   href="#collapseSeven">
+											旗手
+										</a>
+									</h4>
+								</div>
+								<div id="collapseSeven" class="panel-collapse collapse">
+									<div class="panel-body">
+										高中運動會進場，四個人要各拉旗子的四角，然後在運動會開幕典禮時進場。
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" 
+										   href="#collapseEight">
+											系辦工讀生
+										</a>
+									</h4>
+								</div>
+								<div id="collapseEight" class="panel-collapse collapse">
+									<div class="panel-body">
+										大學因緣際會下進入系辦當工讀生，很有趣，也因此有更多機會可以去把握!
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" 
+										   href="#collapseThree">
+											打工換宿
+										</a>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse">
+									<div class="panel-body">
+										大三的時候去了蘭嶼打工換宿，蘭嶼真的好美，換宿內容就是整理環境，當閒暇時間可以去潛水玩水然後去別的部落晃晃。
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					
 				     <!--<div class="button"><span><a href="#">Read More</a></span></div>-->
 				</div>
 			</div>
@@ -154,11 +271,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="grid-liks">
 						<ul>
-							<li><a href="#">介紹</a></li>
-							<li><a href="#">起源</a></li>
-							<li><a href="#">後續推光與規則演變</a></li>
-							<li><a href="#">規則-犯規</a></li>
-							<li><a href="#">規則-得分</a></li>
+							<li><a href="about.html">介紹</a></li>
+							<li><a href="about.html">起源</a></li>
+							<li><a href="about.html">後續推光與規則演變</a></li>
+							<li><a href="about.html">規則-犯規</a></li>
+							<li><a href="about.html">規則-得分</a></li>
 						</ul>
 					</div>
 					<div class="grid-alink">
@@ -179,11 +296,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="grid-liks">
 						<ul>
-							<li><a href="#">MIZUNO</a></li>
-							<li><a href="#">球隊介紹</a></li>
-							<li><a href="#">舉球手、快攻手介紹</a></li>	
-							<li><a href="#">主攻手介紹</a></li>	
-							<li><a href="#">副攻手介紹</a></li>				
+							<li><a href="services.html">MIZUNO</a></li>
+							<li><a href="services.html">球隊介紹</a></li>
+							<li><a href="services.html">舉球手、快攻手介紹</a></li>	
+							<li><a href="services.html">主攻手介紹</a></li>	
+							<li><a href="services.html">副攻手介紹</a></li>				
 						</ul>
 					</div>
 					<div class="grid-alink">
@@ -204,11 +321,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="grid-liks">
 						<ul>
-							<li><a href="#">健美</a></li>
-							<li><a href="#">體能鍛鍊</a></li>
-							<li><a href="#">負重訓練</a></li>
-							<li><a href="#">健力</a></li>
-							<li><a href="#">飛輪</a></li>
+							<li><a href="pakages.html">健美</a></li>
+							<li><a href="pakages.html">體能鍛鍊</a></li>
+							<li><a href="pakages.html">負重訓練</a></li>
+							<li><a href="pakages.html">健力</a></li>
+							<li><a href="pakages.html">飛輪</a></li>
 						</ul>
 					</div>
 					<div class="grid-alink">
@@ -225,7 +342,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="about.html">Volleyball</a></li>
 								<li><a href="services.html">MIZUNO</a></li>
 								<li><a href="pakages.html">Fitness</a></li>
-								<!--<li><a href="contact.html">contact</a></li>-->
+								<li><a href="contact.html">contact</a></li>
 							</ul>
 							<p>&copy 2013 Travelexpert . All rights Reserved | Design by <a href="http://w3layouts.com">W3Layouts</a></p>
 						</div>

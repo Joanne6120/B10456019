@@ -5,8 +5,10 @@
 	License URL: http://creativecommons.org/licenses/by/3.0/
 ---*/
 @import url('reset.css');
-
 /* General Demo Style */
+.ball{
+	display: none;
+}
 body{
 	background: #fff;
 	color: #000;

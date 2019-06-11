@@ -1236,7 +1236,7 @@ img{max-width:100%;}
 	}
 }
 @media only screen and (max-width: 800px) {
-	.about-topgrid1,.about-histore,.about-services,.grids-topgrid1,.service-content,.services-sidebar {
+	.about-topgrid1,.about-histore,.about-services,.grids-topgrid1,.service-content,.services-sidebar,.ourteam {
 		width: 100%;
 		float: left;
 		margin-right: 5%;
@@ -1286,7 +1286,7 @@ img{max-width:100%;}
 	}
 }
 @media only screen and (max-width: 600px) {
-	.about-topgrid1, .about-histore, .about-services,.grids-topgrid1,.service-content,.services-sidebar {
+	.about-topgrid1, .about-histore, .about-services,.grids-topgrid1,.service-content,.services-sidebar ,.ourteam{
 		width: 97%;
 		float: left;
 		margin-right: 0%;
